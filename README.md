@@ -1,4 +1,4 @@
 XstarX
 ======
 
-a communicate server use lua as its logic components
+1. Recording notes in source code reading
