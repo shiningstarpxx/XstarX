@@ -120,10 +120,10 @@ int qksort(void *data, int size, int esize, int i, int k, int (*compare)(const v
 			return -1;
 
 		/* do this way, any better? */
-		//i = j+1;
+		i = j+1;
 		/* common way*/
-		if( qksort(data, size, esize, j+1, k, compare) < 0 )
-			return -1;
+		/* if( qksort(data, size, esize, j+1, k, compare) < 0 ) */
+			/* return -1; */
 	}
 	return 0;
 }
