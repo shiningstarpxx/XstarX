@@ -4,10 +4,19 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+DRIECTLS_H	directls.h	19;"	d
+Directory	directls.h	/^} Directory;$/;"	t	typeref:struct:Directory_
+Directory_	directls.h	/^typedef struct Directory_$/;"	s
+Directory_::name	directls.h	/^	char 	name[MAXNAMLEN + 1]; $/;"	m	struct:Directory_	access:public
 SORT_H	sort.h	20;"	d
+compare_dir	directls.c	/^static int compare_dir( const void *key1, const void *key2)$/;"	f	file:	signature:( const void *key1, const void *key2)
 compare_int	sort.c	/^static int compare_int(const void *int1, const void *int2 )$/;"	f	file:	signature:(const void *int1, const void *int2 )
+directls	directls.c	/^int directls(const char *path, Directory **dir )$/;"	f	signature:(const char *path, Directory **dir )
+directory	directls.h	/^int directory(const char *path, Directory **dir );$/;"	p	signature:(const char *path, Directory **dir )
 issort	sort.c	/^int issort(void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))$/;"	f	signature:(void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))
 issort	sort.h	/^int issort( void *data, int size, int esize, int (*compare)(const void *key1, const void *key2));$/;"	p	signature:( void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))
+main	directls.c	/^int main()$/;"	f
+name	directls.h	/^	char 	name[MAXNAMLEN + 1]; $/;"	m	struct:Directory_	access:public
 partition	sort.c	/^static int partition( void *data, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))$/;"	f	file:	signature:( void *data, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))
 qksort	sort.c	/^int qksort(void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))$/;"	f	signature:(void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))
 qksort	sort.h	/^int qksort( void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2));$/;"	p	signature:( void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))

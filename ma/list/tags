@@ -1,0 +1,117 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLIST_H	clist.h	19;"	d
+CList	clist.h	/^} CList;$/;"	t	typeref:struct:CList_
+CListElmt	clist.h	/^} CListElmt;$/;"	t	typeref:struct:CListElmt_
+CListElmt_	clist.h	/^typedef struct CListElmt_$/;"	s
+CListElmt_::data	clist.h	/^	void *data;$/;"	m	struct:CListElmt_	access:public
+CListElmt_::next	clist.h	/^	struct CListElmt_ *next;$/;"	m	struct:CListElmt_	typeref:struct:CListElmt_::CListElmt_	access:public
+CList_	clist.h	/^typedef struct CList_$/;"	s
+CList_::destroy	clist.h	/^	void (*destroy)(void *data );$/;"	m	struct:CList_	access:public
+CList_::head	clist.h	/^	CListElmt *head;$/;"	m	struct:CList_	access:public
+CList_::match	clist.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:CList_	access:public
+CList_::size	clist.h	/^	int size;$/;"	m	struct:CList_	access:public
+DLIST_H	dlist.h	19;"	d
+DList	dlist.h	/^} DList;$/;"	t	typeref:struct:DList_
+DListElmt	dlist.h	/^} DListElmt;$/;"	t	typeref:struct:DListElmt_
+DListElmt_	dlist.h	/^typedef struct DListElmt_$/;"	s
+DListElmt_::data	dlist.h	/^	void *data;$/;"	m	struct:DListElmt_	access:public
+DListElmt_::next	dlist.h	/^	struct DListElmt_ *next;$/;"	m	struct:DListElmt_	typeref:struct:DListElmt_::DListElmt_	access:public
+DListElmt_::prev	dlist.h	/^	struct DListElmt_ *prev;$/;"	m	struct:DListElmt_	typeref:struct:DListElmt_::DListElmt_	access:public
+DList_	dlist.h	/^typedef struct DList_$/;"	s
+DList_::destroy	dlist.h	/^	void (*destroy)(void *data);$/;"	m	struct:DList_	access:public
+DList_::head	dlist.h	/^	DListElmt *head;$/;"	m	struct:DList_	access:public
+DList_::match	dlist.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:DList_	access:public
+DList_::size	dlist.h	/^	int size;$/;"	m	struct:DList_	access:public
+DList_::tail	dlist.h	/^	DListElmt *tail;$/;"	m	struct:DList_	access:public
+LIST_H	list.h	19;"	d
+List	list.h	/^} List;$/;"	t	typeref:struct:List_
+ListElmt	list.h	/^} ListElmt;$/;"	t	typeref:struct:ListElmt_
+ListElmt_	list.h	/^typedef struct ListElmt_$/;"	s
+ListElmt_::data	list.h	/^	void *data;$/;"	m	struct:ListElmt_	access:public
+ListElmt_::next	list.h	/^	struct ListElmt_ *next;$/;"	m	struct:ListElmt_	typeref:struct:ListElmt_::ListElmt_	access:public
+List_	list.h	/^typedef struct List_$/;"	s
+List_::destroy	list.h	/^	void (*destroy)(void *data);$/;"	m	struct:List_	access:public
+List_::head	list.h	/^	ListElmt *head;$/;"	m	struct:List_	access:public
+List_::match	list.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:List_	access:public
+List_::size	list.h	/^	int size;$/;"	m	struct:List_	access:public
+List_::tail	list.h	/^	ListElmt *tail;$/;"	m	struct:List_	access:public
+PAGE_H	page.h	19;"	d
+Page	page.h	/^} Page;$/;"	t	typeref:struct:Page_
+Page_	page.h	/^typedef struct Page_$/;"	s
+Page_::number	page.h	/^	int number;$/;"	m	struct:Page_	access:public
+Page_::reference	page.h	/^	int reference;$/;"	m	struct:Page_	access:public
+clist_data	clist.h	45;"	d
+clist_destroy	clist.c	/^void clist_destroy( CList *list )$/;"	f	signature:( CList *list )
+clist_destroy	clist.h	/^void clist_destroy(CList *list);$/;"	p	signature:(CList *list)
+clist_head	clist.h	44;"	d
+clist_init	clist.c	/^void clist_init(CList *list, void (*destroy)(void *data) )$/;"	f	signature:(CList *list, void (*destroy)(void *data) )
+clist_init	clist.h	/^void clist_init(CList *list, void (*destroy)(void *data) );$/;"	p	signature:(CList *list, void (*destroy)(void *data) )
+clist_ins_next	clist.c	/^int clist_ins_next( CList *list, CListElmt *element, const void *data)$/;"	f	signature:( CList *list, CListElmt *element, const void *data)
+clist_ins_next	clist.h	/^int clist_ins_next(CList *list, CListElmt *element, const void *data);$/;"	p	signature:(CList *list, CListElmt *element, const void *data)
+clist_next	clist.h	46;"	d
+clist_rem_next	clist.c	/^int clist_rem_next(CList *list, CListElmt *element, void **data )$/;"	f	signature:(CList *list, CListElmt *element, void **data )
+clist_rem_next	clist.h	/^int clist_rem_next(CList *list, CListElmt *element, void **data );$/;"	p	signature:(CList *list, CListElmt *element, void **data )
+clist_size	clist.h	43;"	d
+data	clist.h	/^	void *data;$/;"	m	struct:CListElmt_	access:public
+data	dlist.h	/^	void *data;$/;"	m	struct:DListElmt_	access:public
+data	list.h	/^	void *data;$/;"	m	struct:ListElmt_	access:public
+destroy	clist.h	/^	void (*destroy)(void *data );$/;"	m	struct:CList_	access:public
+destroy	dlist.h	/^	void (*destroy)(void *data);$/;"	m	struct:DList_	access:public
+destroy	list.h	/^	void (*destroy)(void *data);$/;"	m	struct:List_	access:public
+dlist_data	dlist.h	51;"	d
+dlist_destroy	dlist.c	/^void dlist_destroy(DList *list)$/;"	f	signature:(DList *list)
+dlist_destroy	dlist.h	/^void dlist_destroy(DList *list);$/;"	p	signature:(DList *list)
+dlist_head	dlist.h	47;"	d
+dlist_init	dlist.c	/^void dlist_init(DList *list, void (*destroy)(void *data) )$/;"	f	signature:(DList *list, void (*destroy)(void *data) )
+dlist_init	dlist.h	/^void dlist_init(DList *list, void (*destroy)(void *data));$/;"	p	signature:(DList *list, void (*destroy)(void *data))
+dlist_ins_next	dlist.c	/^int dlist_ins_next(DList *list, DListElmt *element, const void *data )$/;"	f	signature:(DList *list, DListElmt *element, const void *data )
+dlist_ins_next	dlist.h	/^int dlist_ins_next(DList *list, DListElmt *element, const void *data);$/;"	p	signature:(DList *list, DListElmt *element, const void *data)
+dlist_ins_pre	dlist.c	/^int dlist_ins_pre(DList *list, DListElmt *element, const void *data)$/;"	f	signature:(DList *list, DListElmt *element, const void *data)
+dlist_ins_prev	dlist.h	/^int dlist_ins_prev(DList *list, DListElmt *element, const void *data);$/;"	p	signature:(DList *list, DListElmt *element, const void *data)
+dlist_is_head	dlist.h	49;"	d
+dlist_is_tail	dlist.h	50;"	d
+dlist_next	dlist.h	52;"	d
+dlist_prev	dlist.h	53;"	d
+dlist_remove	dlist.c	/^int dlist_remove(DList *list, DListElmt *element, void **data)$/;"	f	signature:(DList *list, DListElmt *element, void **data)
+dlist_remove	dlist.h	/^int dlist_remove(DList *list, DListElmt *element, void **data );$/;"	p	signature:(DList *list, DListElmt *element, void **data )
+dlist_size	dlist.h	46;"	d
+dlist_tail	dlist.h	48;"	d
+head	clist.h	/^	CListElmt *head;$/;"	m	struct:CList_	access:public
+head	dlist.h	/^	DListElmt *head;$/;"	m	struct:DList_	access:public
+head	list.h	/^	ListElmt *head;$/;"	m	struct:List_	access:public
+list_data	list.h	48;"	d
+list_destroy	list.c	/^void list_destroy(List *list)$/;"	f	signature:(List *list)
+list_destroy	list.h	/^void list_destroy(List *list);$/;"	p	signature:(List *list)
+list_head	list.h	44;"	d
+list_init	list.c	/^void list_init(List *list, void (*destroy)(void *data) )$/;"	f	signature:(List *list, void (*destroy)(void *data) )
+list_init	list.h	/^void list_init(List *list, void (*destroy)(void *data));$/;"	p	signature:(List *list, void (*destroy)(void *data))
+list_ins_next	list.c	/^int list_ins_next( List *list, ListElmt *element, const void *data )$/;"	f	signature:( List *list, ListElmt *element, const void *data )
+list_ins_next	list.h	/^int list_ins_next(List *list, ListElmt *element, const void *data);$/;"	p	signature:(List *list, ListElmt *element, const void *data)
+list_is_head	list.h	46;"	d
+list_is_tail	list.h	47;"	d
+list_next	list.h	49;"	d
+list_rem_next	list.c	/^int list_rem_next(List *list, ListElmt *element, void **data )$/;"	f	signature:(List *list, ListElmt *element, void **data )
+list_rem_next	list.h	/^int list_rem_next(List *list, ListElmt *element, void **data);$/;"	p	signature:(List *list, ListElmt *element, void **data)
+list_size	list.h	43;"	d
+list_tail	list.h	45;"	d
+match	clist.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:CList_	access:public
+match	dlist.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:DList_	access:public
+match	list.h	/^	int (*match)(const void *key1, const void *key2);$/;"	m	struct:List_	access:public
+next	clist.h	/^	struct CListElmt_ *next;$/;"	m	struct:CListElmt_	typeref:struct:CListElmt_::CListElmt_	access:public
+next	dlist.h	/^	struct DListElmt_ *next;$/;"	m	struct:DListElmt_	typeref:struct:DListElmt_::DListElmt_	access:public
+next	list.h	/^	struct ListElmt_ *next;$/;"	m	struct:ListElmt_	typeref:struct:ListElmt_::ListElmt_	access:public
+number	page.h	/^	int number;$/;"	m	struct:Page_	access:public
+prev	dlist.h	/^	struct DListElmt_ *prev;$/;"	m	struct:DListElmt_	typeref:struct:DListElmt_::DListElmt_	access:public
+reference	page.h	/^	int reference;$/;"	m	struct:Page_	access:public
+replace_page	page.c	/^int replace_page( CListElmt **current)$/;"	f	signature:( CListElmt **current)
+replace_page	page.h	/^int replace_page(CListElmt **current);$/;"	p	signature:(CListElmt **current)
+size	clist.h	/^	int size;$/;"	m	struct:CList_	access:public
+size	dlist.h	/^	int size;$/;"	m	struct:DList_	access:public
+size	list.h	/^	int size;$/;"	m	struct:List_	access:public
+tail	dlist.h	/^	DListElmt *tail;$/;"	m	struct:DList_	access:public
+tail	list.h	/^	ListElmt *tail;$/;"	m	struct:List_	access:public
