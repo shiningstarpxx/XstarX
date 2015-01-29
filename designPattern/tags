@@ -1,0 +1,53 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AttackStrategy	StrategyPattern_game.cpp	/^class AttackStrategy : public Strategy$/;"	c	file:	inherits:Strategy
+AttackStrategy::select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:AttackStrategy	access:public	signature:( int a, int b, int c )
+BalanceStrategy	StrategyPattern_game.cpp	/^class BalanceStrategy : public Strategy$/;"	c	file:	inherits:Strategy
+BalanceStrategy::select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:BalanceStrategy	access:public	signature:( int a, int b, int c )
+Battle	ObserverPattern_observer.h	/^class Battle : public Observer$/;"	c	inherits:Observer
+Battle::update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Battle	access:public	signature:( vector<int> data )
+DefenseStrategy	StrategyPattern_game.cpp	/^class DefenseStrategy : public Strategy$/;"	c	file:	inherits:Strategy
+DefenseStrategy::select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:DefenseStrategy	access:public	signature:( int a, int b, int c )
+EventManager	ObserverPattern_manager.h	/^	EventManager()$/;"	f	class:EventManager	access:public	signature:()
+EventManager	ObserverPattern_manager.h	/^class EventManager$/;"	c
+EventManager::EventManager	ObserverPattern_manager.h	/^	EventManager()$/;"	f	class:EventManager	access:public	signature:()
+EventManager::add_observer	ObserverPattern_manager.h	/^	void add_observer( Observer o )$/;"	f	class:EventManager	access:public	signature:( Observer o )
+EventManager::changed_	ObserverPattern_manager.h	/^	bool changed_;$/;"	m	class:EventManager	access:private
+EventManager::data_	ObserverPattern_manager.h	/^	vector<int> data_;$/;"	m	class:EventManager	access:private
+EventManager::notify_observer	ObserverPattern_manager.h	/^	void notify_observer()$/;"	f	class:EventManager	access:public	signature:()
+EventManager::observers_	ObserverPattern_manager.h	/^	vector<Observer> observers_;$/;"	m	class:EventManager	access:private
+EventManager::remove_observer	ObserverPattern_manager.h	/^	void remove_observer( Observer o )$/;"	f	class:EventManager	access:public	signature:( Observer o )
+Game	StrategyPattern_game.cpp	/^class Game$/;"	c	file:
+Game::run	StrategyPattern_game.cpp	/^	void run()$/;"	f	class:Game	access:public	signature:()
+Game::set_strategy	StrategyPattern_game.cpp	/^	void set_strategy( Strategy s )$/;"	f	class:Game	access:public	signature:( Strategy s )
+Game::strategy_	StrategyPattern_game.cpp	/^	Strategy strategy_;$/;"	m	class:Game	file:	access:private
+Lobby	ObserverPattern_observer.h	/^class Lobby : public Observer$/;"	c	inherits:Observer
+Lobby::update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Lobby	access:public	signature:( vector<int> data )
+OBSERVER_PATTERN_OBJECT	ObserverPattern_manager.h	19;"	d
+OBSERVER_PATTERN_OBSERVER	ObserverPattern_observer.h	19;"	d
+Observer	ObserverPattern_observer.h	/^class Observer$/;"	c
+Observer::update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Observer	access:public	signature:( vector<int> data )
+Strategy	StrategyPattern_game.cpp	/^class Strategy$/;"	c	file:
+Strategy::select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c )$/;"	f	class:Strategy	access:public	signature:( int a, int b, int c )
+add_observer	ObserverPattern_manager.h	/^	void add_observer( Observer o )$/;"	f	class:EventManager	access:public	signature:( Observer o )
+changed_	ObserverPattern_manager.h	/^	bool changed_;$/;"	m	class:EventManager	access:private
+data_	ObserverPattern_manager.h	/^	vector<int> data_;$/;"	m	class:EventManager	access:private
+main	ObserverPattern_manager.cpp	/^int main()$/;"	f	signature:()
+main	StrategyPattern_game.cpp	/^int main()$/;"	f	signature:()
+notify_observer	ObserverPattern_manager.h	/^	void notify_observer()$/;"	f	class:EventManager	access:public	signature:()
+observers_	ObserverPattern_manager.h	/^	vector<Observer> observers_;$/;"	m	class:EventManager	access:private
+remove_observer	ObserverPattern_manager.h	/^	void remove_observer( Observer o )$/;"	f	class:EventManager	access:public	signature:( Observer o )
+run	StrategyPattern_game.cpp	/^	void run()$/;"	f	class:Game	access:public	signature:()
+select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c )$/;"	f	class:Strategy	access:public	signature:( int a, int b, int c )
+select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:AttackStrategy	access:public	signature:( int a, int b, int c )
+select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:BalanceStrategy	access:public	signature:( int a, int b, int c )
+select	StrategyPattern_game.cpp	/^	void select( int a, int b, int c ){}$/;"	f	class:DefenseStrategy	access:public	signature:( int a, int b, int c )
+set_strategy	StrategyPattern_game.cpp	/^	void set_strategy( Strategy s )$/;"	f	class:Game	access:public	signature:( Strategy s )
+strategy_	StrategyPattern_game.cpp	/^	Strategy strategy_;$/;"	m	class:Game	file:	access:private
+update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Battle	access:public	signature:( vector<int> data )
+update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Lobby	access:public	signature:( vector<int> data )
+update	ObserverPattern_observer.h	/^	void update( vector<int> data )$/;"	f	class:Observer	access:public	signature:( vector<int> data )

@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+SORT_H	sort.h	20;"	d
+compare_int	sort.c	/^static int compare_int(const void *int1, const void *int2 )$/;"	f	file:	signature:(const void *int1, const void *int2 )
+issort	sort.c	/^int issort(void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))$/;"	f	signature:(void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))
+issort	sort.h	/^int issort( void *data, int size, int esize, int (*compare)(const void *key1, const void *key2));$/;"	p	signature:( void *data, int size, int esize, int (*compare)(const void *key1, const void *key2))
+partition	sort.c	/^static int partition( void *data, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))$/;"	f	file:	signature:( void *data, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))
+qksort	sort.c	/^int qksort(void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))$/;"	f	signature:(void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))
+qksort	sort.h	/^int qksort( void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2));$/;"	p	signature:( void *data, int size, int esize, int i, int k, int (*compare)(const void *key1, const void *key2))

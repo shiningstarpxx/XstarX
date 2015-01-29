@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+QUEUE_H	queue.h	19;"	d
+Queue	queue.h	/^typedef List Queue;$/;"	t
+STACK_H	stack.h	19;"	d
+Stack	stack.h	/^typedef List Stack;$/;"	t
+process_event	events.c	/^int process_event(Queue *events, int (*dispatch)(Event *event) )$/;"	f	signature:(Queue *events, int (*dispatch)(Event *event) )
+queue_dequeue	queue.c	/^int queue_dequeue( Queue *queue, void **data )$/;"	f	signature:( Queue *queue, void **data )
+queue_dequeue	queue.h	/^int queue_dequeue( Queue *queue, void **data );$/;"	p	signature:( Queue *queue, void **data )
+queue_destroy	queue.h	27;"	d
+queue_enqueue	queue.c	/^int queue_enqueue( Queue *queue, const void *data )$/;"	f	signature:( Queue *queue, const void *data )
+queue_enqueue	queue.h	/^int queue_enqueue( Queue *queue, const void *data );$/;"	p	signature:( Queue *queue, const void *data )
+queue_init	queue.h	26;"	d
+queue_peek	queue.h	32;"	d
+queue_size	queue.h	33;"	d
+receive_event	events.c	/^int receive_event(Queue *events, const Event *event )$/;"	f	signature:(Queue *events, const Event *event )
+stack_destroy	stack.h	27;"	d
+stack_init	stack.h	26;"	d
+stack_peek	stack.h	32;"	d
+stack_pop	stack.c	/^int stack_pop( Stack *stack, void **data )$/;"	f	signature:( Stack *stack, void **data )
+stack_pop	stack.h	/^int stack_pop(Stack *stack, void **data);$/;"	p	signature:(Stack *stack, void **data)
+stack_push	stack.c	/^int stack_push( Stack *stack, const void *data )$/;"	f	signature:( Stack *stack, const void *data )
+stack_push	stack.h	/^int stack_push(Stack *stack, const void *data);$/;"	p	signature:(Stack *stack, const void *data)
+stack_size	stack.h	33;"	d
