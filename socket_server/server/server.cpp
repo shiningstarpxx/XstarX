@@ -2,6 +2,7 @@
 
 int main()
 {
+	/* this part is very dangerous, if the connection connect immediatly  */
 	if(init_server(TCP_PROTOCOL) < 0) return -1;
 	
 	pthread_t listen_pt;
