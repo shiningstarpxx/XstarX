@@ -11,7 +11,6 @@
  *       Compiler:  gcc
  *
  *         Author:  michaelpei (XingxinPei), xingxinpei@gmai.com, xingxinpei@icloud.com
- *        Company:  WDSGame
  *
  * =====================================================================================
  */

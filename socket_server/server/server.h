@@ -203,6 +203,10 @@ void *work_thread(void *arg)
 			if(ev.events & EPOLLOUT)
 			{
 				if(handle_send(ev.data.fd) < 0)	clean_connection(ev.data.fd);
+				
+				/* this part code has some problem, if server need send more
+				 * data later and client not push any message to server, the
+				 * clinet may never receive message */
 				if(g_ed[ev.data.fd].send_len <= 0)
 				{
 					ev.events = EPOLLIN;
